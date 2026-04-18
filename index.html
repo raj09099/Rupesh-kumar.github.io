@@ -5,12 +5,12 @@
 <title>Rupesh Kumar Thakur | Cybersecurity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   background: #020617;
   color: #00ff88;
 }
@@ -19,15 +19,17 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 15px 40px;
   background: black;
   border-bottom: 1px solid #00ff88;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-  margin: 0 10px;
-  text-decoration: none;
   color: #00ff88;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 nav a:hover {
@@ -37,25 +39,31 @@ nav a:hover {
 /* HERO */
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 80px;
+  align-items: center;
 }
 
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
-.hero-text p {
-  margin-top: 10px;
-  color: #94a3b8;
+.hero-text span {
+  color: #00ff88;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
+.hero-img img {
+  width: 350px;
   border: 1px solid #00ff88;
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* BUTTON */
+.btn {
+  border: 1px solid #00ff88;
+  padding: 10px 20px;
   margin-top: 20px;
+  display: inline-block;
   text-decoration: none;
   color: #00ff88;
 }
@@ -70,6 +78,14 @@ section {
   padding: 60px 80px;
 }
 
+/* TERMINAL BOX */
+.terminal {
+  border: 1px solid #00ff88;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px #00ff88;
+}
+
 /* SKILLS */
 .skills {
   display: grid;
@@ -79,7 +95,7 @@ section {
 
 .skill-box {
   border: 1px solid #00ff88;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -123,35 +139,53 @@ footer {
 
 <div class="hero">
   <div class="hero-text">
-    <h1>Hi, I'm Rupesh Kumar</h1>
-    <h3>Cybersecurity Student</h3>
+    <h1>Hi, I'm <span>Rupesh Kumar Thakur_</span></h1>
+    <p>Cybersecurity Student</p>
     <p>Ethical Hacking Enthusiast</p>
+
     <a href="#projects" class="btn">View Projects</a>
+
+    <p>> System Status: Learning & Securing...</p>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="hacker">
   </div>
 </div>
 
 <section id="about">
-  <h2>// About Me</h2>
+  <h2>// Who Am I?</h2>
+
   <p>
     I am currently studying Cybersecurity at Chandigarh University.
-    Passionate about ethical hacking, network security, and protecting systems.
+    Passionate about ethical hacking, network security, and exploring vulnerabilities.
   </p>
+
+  <div class="terminal">
+    <p>> personal_info.txt</p>
+    <p>Name: Rupesh Kumar Thakur</p>
+    <p>Education: B.Tech - Cybersecurity</p>
+    <p>University: Chandigarh University</p>
+    <p>Status: Learning & Building</p>
+  </div>
 </section>
 
 <section id="skills">
-  <h2>// Skills</h2>
+  <h2>// Tools & Technologies</h2>
+
   <div class="skills">
     <div class="skill-box">Linux</div>
     <div class="skill-box">Python</div>
     <div class="skill-box">Wireshark</div>
     <div class="skill-box">Burp Suite</div>
     <div class="skill-box">Networking</div>
-    <div class="skill-box">Ethical Hacking</div>
+    <div class="skill-box">Kali Linux</div>
   </div>
 </section>
 
 <section id="projects">
-  <h2>// Projects</h2>
+  <h2>// My Projects</h2>
+
   <div class="projects">
     <div class="project">Password Strength Checker</div>
     <div class="project">Port Scanner</div>
@@ -161,11 +195,11 @@ footer {
 
 <section id="contact">
   <h2>// Contact</h2>
-  <p>Email: arc682813@gmail.com</p>
+  <p>Email: <a href="mailto:arc682813@gmail.com" style="color:#00ff88;">arc682813@gmail.com</a></p>
 </section>
 
 <footer>
-  <p>> System Active | Rupesh Kumar Thakur </p>
+  <p>> 2026 Rupesh Kumar Thakur | Cybersecurity Student</p>
 </footer>
 
 </body>
