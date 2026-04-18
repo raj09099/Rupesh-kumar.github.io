@@ -6,56 +6,160 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
+* {
   margin: 0;
-  font-family: Arial;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: white;
 }
 
-header {
-  text-align: center;
-  padding: 80px;
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #020617;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* HERO */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* SECTION */
 section {
-  padding: 40px;
-  max-width: 800px;
+  padding: 80px 20px;
+  max-width: 1000px;
   margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .project {
   background: #1e293b;
   padding: 20px;
-  margin: 10px 0;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  background: #334155;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+  <h3>Rupesh</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <header>
-  <h1>Rupesh Kumar</h1>
-  <p>Web Developer 🚀</p>
+  <h1>Rupesh Kumar Thakur</h1>
+  <p>Learning Cybersecurity</p>
 </header>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
-  <p>I build modern websites.</p>
+  <p>I am a passionate developer building modern, responsive websites.</p>
 </section>
 
-<section>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
+</section>
+
+<section id="projects">
   <h2>Projects</h2>
-  <div class="project">Project 1</div>
-  <div class="project">Project 2</div>
+  <div class="projects">
+    <div class="project">Portfolio Website</div>
+    <div class="project">Landing Page</div>
+    <div class="project">UI Design</div>
+  </div>
 </section>
 
-<section>
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <p>Email: arc682813@email.com</p>
 </section>
+
+<footer>
+  <p>© 2026 Rupesh KumarTHakur<p>
+</footer>
 
 </body>
 </html>
